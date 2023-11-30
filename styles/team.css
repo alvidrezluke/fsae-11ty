@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+section ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#team_leads ul li {
+    width: 250px;
+}
+
+#team_leads ul li p {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+section ul li p img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+section ul li ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    text-align: center;
+}
+
+#team_members ul li {
+    width: 200px;
+}
+
+#team_members ul li p {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "fsae-11ty",
+  "version": "1.0.0",
+  "description": "A website for Caltech Racing",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "author": "Luke Alvidrez",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
