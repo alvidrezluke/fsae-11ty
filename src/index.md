@@ -34,6 +34,9 @@ layout: index.njk
 {% instagram %}
 
 </section>
+
+---
+
 <section id="top-sponsors">
 
 ## Top Sponsors
