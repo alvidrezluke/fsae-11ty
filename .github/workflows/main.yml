@@ -28,4 +28,4 @@ jobs:
             token: ${{ secrets.GITHUB_TOKEN }}
             tag: ${{ steps.date.outputs.date }}
       - name: Update Server
-        run: curl -X POST fsae.caltech.edu/github.php
+        run: curl -X POST https://www.fsae.caltech.edu/github.php
