@@ -8,10 +8,11 @@ jobs:
       - uses: actions/checkout@master
       - name: Build
         uses: TartanLlama/actions-eleventy@master
+      - run: ls
       - name: Release
         uses: nicovince/manage-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: public/*
+          files: ./public/*
           sha1: ${{ github.sha }}
