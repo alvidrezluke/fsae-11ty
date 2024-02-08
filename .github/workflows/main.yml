@@ -10,7 +10,9 @@ jobs:
         uses: TartanLlama/actions-eleventy@master
       - name: Release
         uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: getargv.py/dist/*
+          files: public/*
           name: ${{ steps.bump_version.outputs.new_version }}
           tag_name: ${{ steps.bump_version.outputs.new_version }}
