@@ -29,4 +29,4 @@ jobs:
             tag: ${{ steps.date.outputs.date }}
             makeLatest: true
       - name: Update Server
-        run: curl -X POST fsae.caltech.edu/github.php
+        run: curl -X POST --insecure https://www.fsae.caltech.edu/github.php
