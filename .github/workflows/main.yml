@@ -23,6 +23,6 @@ jobs:
         with:
             artifacts: "release.zip"
             token: ${{ secrets.GITHUB_TOKEN }}
-            tag: ${{ github.ref_name }}
+            tag: ${{ github.sha }}
       - name: Update Server
         run: curl -X POST fsae.caltech.edu/github.php
