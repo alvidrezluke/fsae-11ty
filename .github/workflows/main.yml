@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: echo "::set-output name=date::$(date)"
       - uses: actions/checkout@master
       - name: Build
         uses: TartanLlama/actions-eleventy@master
@@ -27,5 +27,6 @@ jobs:
             artifacts: "release.zip"
             token: ${{ secrets.GITHUB_TOKEN }}
             tag: ${{ steps.date.outputs.date }}
+            makeLatest: true
       - name: Update Server
         run: curl -X POST https://www.fsae.caltech.edu/github.php
