@@ -13,5 +13,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: <list of files>
+          files: public/*
           sha1: ${{ github.sha }}
